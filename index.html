@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+
+<body>
+    <!---------------------------Header Section---------------->
+    <header>
+        <!------------------------Navbar----------------------->
+        <nav class="navbar">
+            <div class="navbar--container">
+                <a href="#home" id="navbar-logo">Hash <span class="project--color">Food</span></a>
+                <ul class="navbar--menu">
+                    <li class="navbar--items">
+                        <a href="#home" class="navbar--links navbar--active" id="home-page">Home</a>
+                    </li>
+                    <li class="navbar--items">
+                        <a href="#menu" class="navbar--links" id="about-page">Menu</a>
+                    </li>
+                    <li class="navbar--items">
+                        <a href="#reservation" class="navbar--links" id="services-page">Reservation</a>
+                    </li>
+                    <li class="navbar--items">
+                        <a href="#contact" class="navbar--links" id="about-page">Contact</a>
+                    </li>
+                    <li class="navbar--items">
+                        <a href="#about" class="navbar--links" id="services-page">About Us</a>
+                    </li>
+                </ul>
+                <a href="#signup" class="navbar--btn project--bg" id="signup">Signup</a>
+            </div>
+        </nav>
+
+        <!---------------------------Hero1--------------------------------->
+        <div class="hero1">
+            <div class="hero1--container">
+                <div class="hero1--left">
+                    <span class="hero1--rank project--color">#1 Best Healthy Food</span>
+                    <section class="hero1--title">
+                        <h1><span class="project--color">Good Food</span> Choices <br>Are Good Investment</h1>
+                        <p>Imagin you don't need a diet because we provide healtht and delicious food for you!</p>
+                    </section>
+                    <a href="#orderfood"class="hero1--btn project--bg">Order Food</a>
+                    <div class="hero1--stats">
+                        <div class="hero1--stats--sections">
+                            <h3>5.000+</h3>
+                            <p>Customer</p>
+                        </div>
+                        <div class="hero1--stats--sections">
+                            <h3>8.000+</h3>
+                            <p>Delivery</p>
+                        </div>
+                        <div class="hero1--stats--sections">
+                            <h3>1.000+</h3>
+                            <p>Ratings</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero1--right">
+                    <div class="hero1--image">
+                        <img width="100%" src="img/Hero1_image.png" alt="Food Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------------------------------------Hero2--------------------------------->
+        <div class="hero2">
+            <div class="hero2--container">
+                <div class="hero2--left">
+                    <div class="hero2--image">
+                        <img width="100%" src="img/hero2_image.png" alt="Food Image">
+                    </div>
+                </div>
+                <div class="hero2--right">
+                    <section class="hero2--title">
+                        <h1>WHY CHOOSE US FOR </br>
+                        <span class="project--color">YOUR HEALTHY FOOD</span></h1>
+                        <p>We continue to consistently choose and maintain the quality of the food served, so that it remains fresh and nutritious when you eat it.</p>
+                    </section>
+                    <div class="hero2--icons">
+                        <div class="hero2--icons--items">
+                            <i class="fas fa-pizza-slice"></i>
+                            <h4>Fresh Food</h4>
+                        </div>
+                        <div class="hero2--icons--items">
+                            <i class="fas fa-truck"></i>
+                            <h4>Easy Pickup</h4>
+                        </div>
+                        <div class="hero2--icons--items">
+                            <i class="far fa-check-circle"></i>
+                            <h4>Quality</h4>
+                        </div>
+                        <div class="hero2--icons--items">
+                            <i class="fas fa-headphones-alt"></i>
+                            <h4>24/7 Service</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-------------------------Main Section----------------------------->
+    <!------------------------ Menu Section ---------------------------->
+    <div class="menu">
+        <div class="menu--container">
+            <section class="menu--title">
+                <h2>Choose & Try</h2>
+                <h1>OUR FOOD MENU</h1>
+            </section>
+            <div class="menu--category">
+                <button class="menu--category--btn">PIZZA</button>
+                <button class="menu--category--btn active">BURGUR</button>
+                <button class="menu--category--btn">CHICKEN SOUP</button>
+                <button class="menu--category--btn">DESERT</button>
+                <button class="menu--category--btn">DRINK</button>
+                <button class="menu--category--btn">ICE CREAM</button>
+            </div>
+            <div class="menu--cards--container">
+                <div class="menu--cards">
+                    <a href="#">
+                        <div class="menu--cards--wrap">
+                            <div class="menu--cards--image">
+                                <img src="img/menu_burger.png" alt="Burger">
+                            </div>
+                            <div class="menu--cards--info">
+                                <p>BURGER</p>
+                                <div class="menu--cards--stars project--color">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <p>4.5</p>
+                            </div>
+                            <h3>CHEESE BURGER</h3>
+                            <div class="menu--cards--price project-color">
+                                <h4>PRICE: </h4>
+                                <p><span class="pound">£</span>33.33</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="menu--cards">
+                    <a href="#">
+                        <div class="menu--cards--wrap">
+                            <div class="menu--cards--image">
+                                <img src="img/Menu_chicken.png" alt="Burger">
+                            </div>
+                            <div class="menu--cards--info">
+                                <p>BURGER</p>
+                                <div class="menu--cards--stars project--color">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <p>3.0</p>
+                            </div>
+                            <h3>CHEESE BURGER</h3>
+                            <div class="menu--cards--price project-color">
+                                <h4>PRICE: </h4>
+                                <p>£33.33</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="menu--cards">
+                    <a href="#">
+                        <div class="menu--cards--wrap">
+                            <div class="menu--cards--image">
+                                <img src="img/menu_chicken2.png" alt="Burger">
+                            </div>
+                            <div class="menu--cards--info">
+                                <p>BURGER</p>
+                                <div class="menu--cards--stars project--color">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <p>3.0</p>
+                            </div>
+                            <h3>CHEESE BURGER</h3>
+                            <div class="menu--cards--price project-color">
+                                <h4>PRICE: </h4>
+                                <p><span class="pound">£</span>33.33</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="menu--cards">
+                    <a href="#">
+                        <div class="menu--cards--wrap">
+                            <div class="menu--cards--image">
+                                <img src="img/menu_chowmein.png" alt="Burger">
+                            </div>
+                            <div class="menu--cards--info">
+                                <p>BURGER</p>
+                                <div class="menu--cards--stars project--color">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <p>3.0</p>
+                            </div>
+                            <h3>CHEESE BURGER</h3>
+                            <div class="menu--cards--price project-color">
+                                <h4>PRICE: </h4>
+                                <p><span class="pound"> £</span>33.33</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="menu--cards">
+                    <a href="#">
+                        <div class="menu--cards--wrap">
+                            <div class="menu--cards--image">
+                                <img src="img/menu_wings.png" alt="Burger">
+                            </div>
+                            <div class="menu--cards--info">
+                                <p>BURGER</p>
+                                <div class="menu--cards--stars project--color">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <p>3.0</p>
+                            </div>
+                            <h3>CHEESE BURGER</h3>
+                            <div class="menu--cards--price project-color">
+                                <h4>PRICE: </h4>
+                                <p><span class="pound">£</span>33.33</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="menu--cards">
+                    <a href="#">
+                        <div class="menu--cards--wrap">
+                            <div class="menu--cards--image">
+                                <img src="img/menu_wings.png" alt="Burger">
+                            </div>
+                            <div class="menu--cards--info">
+                                <p>BURGER</p>
+                                <div class="menu--cards--stars project--color">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <p>3.0</p>
+                            </div>
+                            <h3>CHEESE BURGER</h3>
+                            <div class="menu--cards--price project-color">
+                                <h4>PRICE: </h4>
+                                <p><span class="pound">£</span>33.33</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------Reservation Section--------------------->
+
+    <div class="reservation">
+        <div class="reservation--container">
+            <section class="reservation--title">
+                <h2>Choose & Try</h2>
+                <h1>OUR FOOD MENU</h1>
+            </section>
+            <div class="reservation--wrap">
+                <div class="reservation--left">
+                    <div class="reservation--form">
+                        <form action="#" method="post">
+                            <div class="elem--group">
+                            <input type="text" id="name" name="visitor_name" placeholder="ENTER YOUR NAME HERE" pattern=[A-Z\sa-z]{3,20} required>
+                            </div>
+                            <div class="elem--group">
+                                <input type="text" id="adress" name="visitor_adress" placeholder="ADDRESS" pattern=[A-Z\sa-z]{3,20} required>
+                            </div>
+                            <div class="elem--group">
+                                <input type="email" id="email" name="visitor_email" placeholder="EMAIL" required>
+                            </div>
+                            <div class="elem--group">
+                                <input type="tel" id="phone" name="visitor_phone" placeholder="PHONE NUMBER" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+                            </div>
+                            <div class="elem--group">
+                                <input type="number" id="seat" name="total_seat" placeholder="ENTER TOTAL SEAT" min="1" required>
+                            </div>
+                            
+                            <div class="elem--group">
+                                <input type="date" id="checkin-date" name="date" placeholder="DATE" required>
+                            </div>
+                            <div class="elem--group">
+                            <textarea id="message" name="visitor_message" placeholder="MESSAGE" required></textarea>
+                            </div>
+                            <button type="submit" class="reservation--btn btn">Reserve</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="reservation--right">
+                    <div class="reservation--image--wrap">
+                        <div class="reservation--image">
+                            <img width="100%" src="img/reservation_img.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------------Feedback Section--------------------->
+    <div class="feedback">
+        <div class="feedback--container">
+            <div class="feedback--left">
+                <section class="feedback--title">
+                    <h1>
+                        What Are People <br>Saying <span class="project--color">About Us</span>
+                    </h1>
+                    <p>We are very happy if you are satisfied with our service and products, let's read pure reviews from customers who bought our products.</p>
+                </section>
+                <div class="feedback--number">
+                    <div class="feedback--page--count">
+                        02
+                    </div>
+                    <div class="feedback--page--total">
+                        / 05
+                    </div>
+                </div>
+                <div class="feedback--pagination--change">
+                    <a href="#" class="feedback--pagination--btn"><i class="fas fa-arrow-left"></i></a>
+                    <a href="#" class="feedback--pagination--btn active"><i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="feedback--right">
+                <div class="feedback--card">
+                    <div class="feedback--card--wrap">
+                        <div class="feedback--card--image">
+                            <img src="img/feedback_img-1.png" alt="">
+                        </div>
+                        <div class="feedback--card--body">
+                            <h2 class="feedback--card--name">
+                                Selena Gomez
+                            </h2>
+                            <h4 class="feedback--card--age">
+                                22 Years
+                            </h4>
+                            <p class="feedback--card--para">
+                                The food is fresh!!! Don't ask about the sauce again, it's really delicious, it's going to be routine. I recommend this salad to all of you guys! because they really take care of the quality.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feedback--card">
+                    <div class="feedback--card--wrap">
+                        <div class="feedback--card--image">
+                            <img src="img/feedback_img-2.png" alt="">
+                        </div>
+                        <div class="feedback--card--body">
+                            <h2 class="feedback--card--name">
+                                David ken
+                            </h2>
+                            <h4 class="feedback--card--age">
+                                24 Years
+                            </h4>
+                            <p class="feedback--card--para">
+                                The food is fresh!!! Don't ask about the sauce again, it's really delicious, it's going to be routine. I recommend this salad to all of you guys! because they really take care of the quality.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feedback--card">
+                    <a href=""></a>
+                    <div class="feedback--card--wrap">
+                        <div class="feedback--card--image">
+                            <img src="img/feedback_img-3.png" alt="">
+                        </div>
+                        <div class="feedback--card--body">
+                            <h2 class="feedback--card--name">
+                                Jennifer Sina
+                            </h2>
+                            <h4 class="feedback--card--age">
+                                21 Years
+                            </h4>
+                            <p class="feedback--card--para">
+                                The food is fresh!!! Don't ask about the sauce again, it's really delicious, it's going to be routine. I recommend this salad to all of you guys! because they really take care of the quality.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------Special Item Section---------------->
+    <div class="specials">
+        <div class="specials--container">
+            <h1 class="specials--title">
+                ENJOY THE BEST MENU AND GET <span class="project--color">DISCOUNTS </span>AVAILABLE
+            </h1>
+            <div class="specials--main">
+                <div class="specials--card">
+                    <div class="specials--card--wrap">
+                        <div class="specials--card--image">
+                            <img width="100%" src="img/special_img-1.png" alt="">
+                        </div>
+                        <div class="specials--card--info">
+                            <p>Salad Yummy Red</p>
+                            <h3><span>£</span>3.99</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="specials--card">
+                    <div class="specials--card--wrap">
+                        <div class="specials--card--image">
+                            <img width="100%" src="img/special_img-2.png" alt="">
+                        </div>
+                        <div class="specials--card--info">
+                            <p>Salad Yummy Red</p>
+                            <h3><span>£</span>3.99</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="specials--card">
+                    <div class="specials--card--wrap">
+                        <div class="specials--card--image">
+                            <img width="100%" src="img/special_img-3.png" alt="">
+                        </div>
+                        <div class="specials--card--info">
+                            <p>Salad Yummy Red</p>
+                            <h3><span>£</span>3.99</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------App Download Sections---------------->
+    <div class="download">
+        <div class="download--container">
+            <div class="download--left">
+                <div class="download--image">
+                    <img width="100%" src="img/download_img.png" alt="">
+                </div>
+            </div>
+            <div class="download--right">
+                <section class="download--title">
+                    <h3>DOWNLOAD OUR MOBILE APP</h3>
+                    <h1>ENJOY THE BEST MENU AND GET <span class="project--color">DISCOUNTS</span> AVAILABLE</h1>
+                </section>
+                <div class="download--app">
+                    <a class="download--btn" href="#">
+                        <p>GET IT ON</p>
+                        <h3>Google Play</h3>
+                    </a>
+                    <a class="download--btn" href="#">
+                        <p>GET IT ON</p>
+                        <h3>App Store</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------Sample Banner------------------>
+    <div class="banner">
+        <div class="banner--container">
+            <div class="banner--image">
+                <img width="100%" src="img/banner_img.png" alt="">
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer--container">
+            <div class="footer--sections">
+                <h2><span class="project--color">HASH</span> FOOD</h2>
+                <P>HASH FOOD is the pioneer of healthy food with high nutrition.</P>
+                <p class="footer--copyright">©Copyright HashFood</p>
+            </div>
+            <div class="footer--sections">
+                <ul class="footer--menu">
+                    <li class="project--color"><h4 class="footer--sections--header">Feature</h4></li>
+                    <li class="footer--menu--items"><a class="footer--menu--links" href="#">Menu</a></li>
+                    <li class="footer--menu--items"><a class="footer--menu--links" href="#">Promo</a></li>
+                    <li class="footer--menu--items"><a class="footer--menu--links" href="#">Contact</a></li>
+                    <li class="footer--menu--items"><a class="footer--menu--links" href="#">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer--sections">
+                <h4 class="footer--sections--header project--color">Get in Touch</h4>
+                <section class="footer--contact">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>2234 Surma Gate, Zindabazar, Sylhet</p>
+                </section>
+                <section class="footer--contact">
+                    <i class="far fa-envelope"></i>
+                    <p>demomail@hello.com</p>
+                </section>
+                <section class="footer--contact">
+                    <i class="fas fa-phone-alt"></i>
+                    <p>+1 234-567-890</p>
+                </section>
+            </div>
+            <div class="footer--sections">
+                <div class="footer--icons footer--sections--header project--color">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
+                <p class="footer--follow">Follow our social media.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

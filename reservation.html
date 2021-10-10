@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <!---------------------------Header Section---------------->
+    <header>
+        <!------------------------Navbar----------------------->
+        <nav class="navbar">
+            <div class="navbar--container">
+                <a href="#home" id="navbar-logo">Hash <span class="project--color">Food</span></a>
+                <ul class="navbar--menu">
+                    <li class="navbar--items">
+                        <a href="#home" class="navbar--links" id="home-page">Home</a>
+                    </li>
+                    <li class="navbar--items">
+                        <a href="#menu" class="navbar--links" id="about-page">Menu</a>
+                    </li>
+                    <li class="navbar--items">
+                        <a href="#reservation" class="navbar--links navbar--active" id="services-page">Reservation</a>
+                    </li>
+                    <li class="navbar--items">
+                        <a href="#contact" class="navbar--links" id="about-page">Contact</a>
+                    </li>
+                    <li class="navbar--items">
+                        <a href="#about" class="navbar--links" id="services-page">About Us</a>
+                    </li>
+                </ul>
+                <a href="#signup" class="navbar--btn project--bg" id="signup">Signup</a>
+            </div>
+        </nav>
+
+        <!---------------------------Hero1--------------------------------->
+        <div class="heroP2">
+            <div class="heroP2--container">
+                <div class="heroP2--left">
+                    <div class="heroP2--image">
+                        <img width="100%" src="img/hero1_img2.png" alt="Food Image">
+                    </div>
+                </div>
+
+                <div class="heroP2--right">
+                    <span class="heroP2--rank project--color">#1 Best Healthy Food</span>
+                    <section class="heroP2--title">
+                        <h1><span class="project--color">Good Food</span> Choices <br>Are Good Investment</h1>
+                        <p>Imagin you don't need a diet because we provide healtht and delicious food for you!</p>
+                    </section>
+                </div>
+            </div>
+    </header>
+    <!-------------------------Main Section----------------------------->
+    <!------------------------ Reservation Section ---------------------------->
+    
+    <div class="reservation">
+        <div class="reservation--container">
+            <section class="reservation--title">
+                <h2>Choose & Try</h2>
+                <h1>OUR FOOD MENU</h1>
+            </section>
+            <div class="reservation--wrap">
+                <div class="reservation--left">
+                    <div class="reservation--form">
+                        <form action="#" method="post">
+                            <div class="elem--group">
+                                <input type="text" id="name" name="visitor_name" placeholder="ENTER YOUR NAME HERE"
+                                    pattern=[A-Z\sa-z]{3,20} required>
+                            </div>
+                            <div class="elem--group">
+                                <input type="text" id="adress" name="visitor_adress" placeholder="ADDRESS"
+                                    pattern=[A-Z\sa-z]{3,20} required>
+                            </div>
+                            <div class="elem--group">
+                                <input type="email" id="email" name="visitor_email" placeholder="EMAIL" required>
+                            </div>
+                            <div class="elem--group">
+                                <input type="tel" id="phone" name="visitor_phone" placeholder="PHONE NUMBER"
+                                    pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+                            </div>
+                            <div class="elem--group">
+                                <input type="number" id="seat" name="total_seat" placeholder="ENTER TOTAL SEAT" min="1"
+                                    required>
+                            </div>
+    
+                            <div class="elem--group">
+                                <input type="date" id="checkin-date" name="date" placeholder="DATE" required>
+                            </div>
+                            <div class="elem--group">
+                                <textarea id="message" name="visitor_message" placeholder="MESSAGE" required></textarea>
+                            </div>
+                            <button type="submit" class="reservation--btn btn">Reserve</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="reservation--right">
+                    <div class="reservation--image--wrap">
+                        <div class="reservation--image">
+                            <img width="100%" src="img/reservation_img.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------Reservation Section--------------------->
+
+    <!------------------Sample Banner------------------>
+    <div class="banner">
+        <div class="banner--container">
+            <div class="banner--image">
+                <img width="100%" src="img/banner_img.png" alt="">
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer--container">
+            <div class="footer--sections">
+                <h2><span class="project--color">HASH</span> FOOD</h2>
+                <P>HASH FOOD is the pioneer of healthy food with high nutrition.</P>
+                <p class="footer--copyright">©Copyright HashFood</p>
+            </div>
+            <div class="footer--sections">
+                <ul class="footer--menu">
+                    <li class="project--color">
+                        <h4 class="footer--sections--header">Feature</h4>
+                    </li>
+                    <li class="footer--menu--items"><a class="footer--menu--links" href="#">Menu</a></li>
+                    <li class="footer--menu--items"><a class="footer--menu--links" href="#">Promo</a></li>
+                    <li class="footer--menu--items"><a class="footer--menu--links" href="#">Contact</a></li>
+                    <li class="footer--menu--items"><a class="footer--menu--links" href="#">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer--sections">
+                <h4 class="footer--sections--header project--color">Get in Touch</h4>
+                <section class="footer--contact">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>2234 Surma Gate, Zindabazar, Sylhet</p>
+                </section>
+                <section class="footer--contact">
+                    <i class="far fa-envelope"></i>
+                    <p>demomail@hello.com</p>
+                </section>
+                <section class="footer--contact">
+                    <i class="fas fa-phone-alt"></i>
+                    <p>+1 234-567-890</p>
+                </section>
+            </div>
+            <div class="footer--sections">
+                <div class="footer--icons footer--sections--header project--color">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
+                <p class="footer--follow">Follow our social media.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

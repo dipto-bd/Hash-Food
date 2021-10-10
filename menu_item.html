@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <!---------------------------Header Section---------------->
+    <header>
+        <!------------------------Navbar----------------------->
+        <nav class="navbar">
+            <div class="navbar--container">
+                <a href="#home" id="navbar-logo">Hash <span class="project--color">Food</span></a>
+                <ul class="navbar--menu">
+                    <li class="navbar--items">
+                        <a href="#home" class="navbar--links" id="home-page">Home</a>
+                    </li>
+                    <li class="navbar--items">
+                        <a href="#menu" class="navbar--links navbar--active" id="about-page">Menu</a>
+                    </li>
+                    <li class="navbar--items">
+                        <a href="#reservation" class="navbar--links" id="services-page">Reservation</a>
+                    </li>
+                    <li class="navbar--items">
+                        <a href="#contact" class="navbar--links" id="about-page">Contact</a>
+                    </li>
+                    <li class="navbar--items">
+                        <a href="#about" class="navbar--links" id="services-page">About Us</a>
+                    </li>
+                </ul>
+                <a href="#signup" class="navbar--btn project--bg" id="signup">Signup</a>
+            </div>
+        </nav>
+    </header>
+    <!-------------------------Main Section----------------------------->
+    
+    <!------------- Food Menu Item --------------->
+
+    <div class="food">
+        <div class="food--container">
+            <h3 class="food--name">Hot Cake</h3>
+            <div class="food--rating">
+                <div class="food--rating--stars project--color">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <span class="food--rating--number"><b>3.0</b></span>
+            </div>
+            <p class="food--info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+            <h4 class="food--toppings--header">Choose Toppings</h4>
+            <div class="food--toppings">
+                <div class="food--topping active">
+                    <p>Cheese</p>
+                    <p>£1.00</p>
+                </div>
+                <div class="food--topping">
+                    <p>Sweet Cheese</p>
+                    <p>£1.00</p>
+                </div>
+                <div class="food--topping">
+                    <p>Sweet Cheese</p>
+                    <p>£1.00</p>
+                </div>
+                <div class="food--topping">
+                    <p>Sweet Cheese</p>
+                    <p>£1.00</p>
+                </div>
+            </div>
+            <div class="food--counter">
+                <button class="food--counter--button">-</button>
+                <span class="food--counter--number">1</span>
+                <button class="food--counter--button">+</button>
+            </div>
+            <h3 class="food--price">PRICE: <span class="food--price--money">£33.33</span></h3>
+            <button class="food--button">Add to Cart</button>
+            <div class="food--nav">
+                <div class="food--nav--item active">Description</div>
+                <div class="food--nav--item">Reviews</div>
+            </div>
+            <div class="food--description">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Dolor sed viverra ipsum nunc aliquet bibendum enim. Ut diam quam nulla porttitor. Tincidunt nunc pulvinar sapien
+                et. Nec feugiat nisl pretium fusce. Pharetra convallis posuere morbi leo urna molestie at. Ac feugiat sed lectus
+                vestibulum mattis ullamcorper velit sed. Diam ut venenatis tellus in metus vulputate. Neque gravida in fermentum et
+                sollicitudin ac orci phasellus. Risus quis varius quam quisque id. Nunc consequat interdum varius sit amet mattis.
+                Laoreet non curabitur gravida arcu ac. Dui ut ornare lectus sit amet est. Felis bibendum ut tristique et egestas quis
+                ipsum suspendisse. At ultrices mi tempus imperdiet nulla malesuada pellentesque.
+            </p>
+            </div>
+            <!-- <div class="food--reviews">
+
+            </div> -->
+        </div>
+    </div>
+
+    <!--------------------------Cart---------------------------->
+    <div class="cart">
+        <div class="cart--top">
+            <span class="cart--top--left">Cart</span>
+            <span class="cart--top--right"><i class="fas fa-times"></i></span>
+        </div>
+        <div class="cart--middle">
+            <div class="cart--middle--items">
+                <div class="cart--middle--item">
+                    <div class="cart--item">
+                        <span class="cart--item--quantity">1</span>
+                        <div class="cart--item--info">
+                            <h4 class="cart--item--name">California Roll</h4>
+                            <span class="cart--item--type">crab & cucumber</span>
+                            <span class="cart--item--toppings">Sweet Cheese, Tuna</span>
+                        </div>
+                    </div>
+                    <div class="cart--item--counter">
+                        <button class="cart--item--counter--button">-</button>
+                        <span class="cart--item--counter--number">1</span>
+                        <button class="cart--item--counter--button project--bg">+</button>
+                    </div>
+                    <h4 class="cart--item--price">£4.99</h4>
+                </div>
+                <div class="cart--middle--item">
+                    <div class="cart--item">
+                        <span class="cart--item--quantity">1</span>
+                        <div class="cart--item--info">
+                            <h4 class="cart--item--name">California Roll</h4>
+                            <span class="cart--item--type">crab & cucumber</span>
+                            <span class="cart--item--toppings">Sweet Cheese, Tuna</span>
+                        </div>
+                    </div>
+                    <div class="cart--item--counter">
+                        <button class="cart--item--counter--button">-</button>
+                        <span class="cart--item--counter--number">1</span>
+                        <button class="cart--item--counter--button project--bg">+</button>
+                    </div>
+                    <h4 class="cart--item--price">£4.99</h4>
+                </div>
+                <div class="cart--middle--item">
+                    <div class="cart--item">
+                        <span class="cart--item--quantity">1</span>
+                        <div class="cart--item--info">
+                            <h4 class="cart--item--name">California Roll</h4>
+                            <span class="cart--item--type">crab & cucumber</span>
+                            <span class="cart--item--toppings">Sweet Cheese, Tuna</span>
+                        </div>
+                    </div>
+                    <div class="cart--item--counter">
+                        <button class="cart--item--counter--button">-</button>
+                        <span class="cart--item--counter--number">1</span>
+                        <button class="cart--item--counter--button project--bg">+</button>
+                    </div>
+                    <h4 class="cart--item--price">£4.99</h4>
+                </div>
+            </div>
+        </div>
+        <div class="cart--bottom">
+            <div class="cart--bottom--total">
+                <h3 class="cart--bottom--subtotal">Subtotal</h3>
+                <h3 class="cart--bottom--price">£33.39</h3>
+            </div>
+            <div class="cart--bottom--buttons">
+                <button class="cart--bottom--button">View Cart</button>
+                <button class="cart--bottom--button">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!------------------Sample Banner------------------>
+    <div class="banner">
+        <div class="banner--container">
+            <div class="banner--image">
+                <img width="100%" src="img/banner_img.png" alt="">
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer--container">
+            <div class="footer--sections">
+                <h2><span class="project--color">HASH</span> FOOD</h2>
+                <P>HASH FOOD is the pioneer of healthy food with high nutrition.</P>
+                <p class="footer--copyright">©Copyright HashFood</p>
+            </div>
+            <div class="footer--sections">
+                <ul class="footer--menu">
+                    <li class="project--color">
+                        <h4 class="footer--sections--header">Feature</h4>
+                    </li>
+                    <li class="footer--menu--items"><a class="footer--menu--links" href="#">Menu</a></li>
+                    <li class="footer--menu--items"><a class="footer--menu--links" href="#">Promo</a></li>
+                    <li class="footer--menu--items"><a class="footer--menu--links" href="#">Contact</a></li>
+                    <li class="footer--menu--items"><a class="footer--menu--links" href="#">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer--sections">
+                <h4 class="footer--sections--header project--color">Get in Touch</h4>
+                <section class="footer--contact">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>2234 Surma Gate, Zindabazar, Sylhet</p>
+                </section>
+                <section class="footer--contact">
+                    <i class="far fa-envelope"></i>
+                    <p>demomail@hello.com</p>
+                </section>
+                <section class="footer--contact">
+                    <i class="fas fa-phone-alt"></i>
+                    <p>+1 234-567-890</p>
+                </section>
+            </div>
+            <div class="footer--sections">
+                <div class="footer--icons footer--sections--header project--color">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
+                <p class="footer--follow">Follow our social media.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./menu_item.js"></script>
+</body>
+</html>
