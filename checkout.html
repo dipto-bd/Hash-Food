@@ -35,6 +35,7 @@
                         <a href="about.html" class="navbar--links" id="services-page">About Us</a>
                     </li>
                 </ul>
+                
                 <a href="#signup" class="navbar--btn project--bg" id="signup">Signup</a>
             </div>
         </nav>
@@ -56,37 +57,53 @@
                 </div>
                 <div class="checkout--form">
                     <form action="" method="post">
-                        <div class="checkout--form--left">
-                            <div class="elem--group">
-                                <input type="text" id="name" name="visitor_name" placeholder="ENTER NAME HERE" pattern=[A-Z\sa-z]{3,20}
-                                    required>
+                        <div class="checkout--form--wrapper">
+                            <div class="checkout--form--left">
+                                <div class="elem--group">
+                                    <input type="text" id="name" name="visitor_name" placeholder="ENTER NAME HERE" pattern=[A-Z\sa-z]{3,20}
+                                        required>
+                                </div>
+                                <div class="elem--group">
+                                    <input type="text" id="adress" name="visitor_adress" placeholder="ADDRESS" pattern=[A-Z\sa-z]{3,20} required>
+                                </div>
+                                <div class="elem--group">
+                                    <input type="text" id="state" name="state" placeholder="CITY" pattern=[A-Z\sa-z]{3,20} required>
+                                </div>
+                                <div class="elem--group">
+                                    <textarea id="note" name="checkout_note" placeholder="OTHER NOTE" required></textarea>
+                                </div>
                             </div>
-                            <div class="elem--group">
-                                <input type="text" id="adress" name="visitor_adress" placeholder="ADDRESS" pattern=[A-Z\sa-z]{3,20} required>
+                            <div class="checkout--form--right">
+                                <div class="elem--group">
+                                    <input type="tel" id="phone" name="visitor_phone" placeholder="PHONE NUMBER" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) equired>
+                                </div>
+                                <div class="elem--group">
+                                    <input type="email" id="email" name="visitor_email" placeholder="EMAIL" required>
+                                </div>
+                                <div class="elem--group">
+                                    <input type="text" id="postal" name="postal" placeholder="POSTAL CODE" pattern=[A-Z\sa-z]{3,20} required>
+                                </div>
+                                <div class="elem--group">
+                                    <input type="text" id="state" name="state" placeholder="STATE" pattern=[A-Z\sa-z]{3,20} required>
+                                </div>
+                                <div class="elem--group">
+                                    <input type="text" id="country" name="country" placeholder="Country" pattern=[A-Z\sa-z]{3,20} required>
+                                </div>
+                                <div class="elem--group checkout--checkbox">
+                                    <input type="checkbox" id="cb" name="cb" class="checkbox" checked>
+                                    <label for="cb" class="checkout--checkbox--label">Create an account</label>
+                                </div>
                             </div>
-                            <div class="elem--group">
-                                <textarea id="note" name="checkout_note" placeholder="OTHER NOTE" required></textarea>
-                            </div>
-                            <button type="submit" class="checkout--btn btn">Submit</button>
                         </div>
-                        <div class="checkout--form--right">
-                            <div class="elem--group">
-                                <input type="tel" id="phone" name="visitor_phone" placeholder="PHONE NUMBER" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) equired>
-                            </div>
-                            <div class="elem--group">
-                                <input type="email" id="email" name="visitor_email" placeholder="EMAIL" required>
-                            </div>
-                            <div class="elem--group">
-                                <input type="text" id="state" name="state" placeholder="STATE" pattern=[A-Z\sa-z]{3,20} required>
-                            </div>
-                            <div class="elem--group checkout--checkbox">
-                                <input type="checkbox" id="cb" name="cb" class="checkbox" checked>
-                                <label for="cb" class="checkout--checkbox--label">Create an account</label>
-                            </div>
+                        <div class="checkout--coupon">
+                            <input type="text" class="checkout--coupon--input" placeholder="Promo Code">
+                            <button class="checkout--coupon--button">Apply Coupon</button>
                         </div>
+                        <button type="submit" class="checkout--btn btn">Submit</button>
                     </form>
                 </div>
             </div>
+
             <div class="checkout--right">
                 <div class="checkout--right--wrapper">
                     <h3 class="checkout--right--title">ORDER SUMMERY</h3>
@@ -107,10 +124,35 @@
                             </div>
                             <h4 class="checkout--item--price">£4.99</h4>
                         </div>
+                        <div class="checkout--right--item">
+                            <div class="checkout--item--info">
+                                <h4 class="checkout--item--name">California Roll</h4>
+                                <span class="checkout--item--type">crab & cucumber</span>
+                                <span class="checkout--item--toppings">Sweet Cheese, Tuna</span>
+                            </div>
+                            <h4 class="checkout--item--price">£4.99</h4>
+                        </div>
                     </div>
                     <div class="checkout--right--total">
                         <h3 class="checkout--right--total--text">TOTAL</h3>
                         <span class="checkout--right--total--money">£10.55</span>
+                    </div>
+                    <div class="order--shipping">
+                        <h3 class="order--shipping--title">Shipping :</h3>
+                        <div class="order--shipping--section">
+                            <label for="local">
+                                <input type="checkbox" class="order--shiping--checkbox" id="local" checked>
+                                Local Pickup
+                            </label>
+                            <h4 class="order--shipping--price">£4</h4>
+                        </div>
+                        <div class="order--shipping--section">
+                            <label for="local">
+                                <input type="checkbox" class="order--shiping--checkbox" id="local">
+                                Flat Rate
+                            </label>
+                            <h4 class="order--shipping--price">£4</h4>
+                        </div>
                     </div>
                     <div class="checkout--right--button--area">
                         <button class="checkout--right--button">PLACE ORDER</button>

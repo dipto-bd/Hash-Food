@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <!---------------------------Header Section---------------->
+    <header>
+        <!------------------------Navbar----------------------->
+        <nav class="navbar">
+            <div class="navbar--container">
+                <a href="index.html" id="navbar-logo">Hash <span class="project--color">Food</span></a>
+                <ul class="navbar--menu">
+                    <li class="navbar--items">
+                        <a href="index.html" class="navbar--links" id="home-page">Home</a>
+                    </li>
+                    <li class="navbar--items">
+                        <a href="menu.html" class="navbar--links navbar--active" id="about-page">Menu</a>
+                    </li>
+                    <li class="navbar--items">
+                        <a href="reservation.html" class="navbar--links" id="services-page">Reservation</a>
+                    </li>
+                    <li class="navbar--items">
+                        <a href="contact.html" class="navbar--links" id="about-page">Contact</a>
+                    </li>
+                    <li class="navbar--items">
+                        <a href="about.html" class="navbar--links" id="services-page">About Us</a>
+                    </li>
+                </ul>
+                
+                <a href="#signup" class="navbar--btn project--bg" id="signup">Signup</a>
+            </div>
+        </nav>
+    </header>
+    <!-------------------------Main Section----------------------------->
+
+    <!------------- Breadcrumb --------------->
+    <div class="food-cart--breadcrumb">
+        <div class="checkout--breadcrumb">
+            <div class="checkout--breadcrumb--items">
+                <span class="checkout--breadcrumb--item active">Food Cart</span>
+                <span class="checkout--breadcrumb--item">Checkout</span>
+                <span class="checkout--breadcrumb--item">Complete Order</span>
+            </div>
+        </div>
+    </div>
+
+    <!------------------ Food Cart --------------->
+
+    <div class="food-cart">
+        <div class="food-cart--container">
+            <div class="food-cart--left">
+                <table class="food-cart--table">
+                    <thead>
+                        <tr>
+                            <th> </th>
+                            <th>Product</th>
+                            <th>Unit Price</th>
+                            <th>Quantity</th>
+                            <th>Line Total</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>01</td>
+                            <td>
+                                <div class="food-cart--item">
+                                    <img src="./img/Menu_chicken.png" alt="product">
+                                    Fried Chicken
+                                </div>
+                            </td>
+                            <td>£4</td>
+                            <td>
+                                <div class="cart--item--counter">
+                                    <button class="cart--item--counter--button">-</button>
+                                    <span class="cart--item--counter--number">1</span>
+                                    <button class="cart--item--counter--button project--bg">+</button>
+                                </div>
+                            </td>
+                            <td>£4</td>
+                            <td>
+                                <a href="#" class="food-cart--item--delete"><i class="fas fa-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>01</td>
+                            <td>
+                                <div class="food-cart--item">
+                                    <img src="./img/Menu_chicken.png" alt="product">
+                                    Fried Chicken
+                                </div>
+                            </td>
+                            <td>£4</td>
+                            <td>
+                                <div class="cart--item--counter">
+                                    <button class="cart--item--counter--button">-</button>
+                                    <span class="cart--item--counter--number">1</span>
+                                    <button class="cart--item--counter--button project--bg">+</button>
+                                </div>
+                            </td>
+                            <td>£4</td>
+                            <td>
+                                <a href="#" class="food-cart--item--delete"><i class="fas fa-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>01</td>
+                            <td>
+                                <div class="food-cart--item">
+                                    <img src="./img/Menu_chicken.png" alt="product">
+                                    Fried Chicken
+                                </div>
+                            </td>
+                            <td>£4</td>
+                            <td>
+                                <div class="cart--item--counter">
+                                    <button class="cart--item--counter--button">-</button>
+                                    <span class="cart--item--counter--number">1</span>
+                                    <button class="cart--item--counter--button project--bg">+</button>
+                                </div>
+                            </td>
+                            <td>£4</td>
+                            <td>
+                                <a href="#" class="food-cart--item--delete"><i class="fas fa-trash"></i></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="food-cart--right">
+                <div class="food-cart--right--wrapper">
+                    <h3 class="food-cart--right--title">
+                        Order Summery
+                    </h3>
+                    <hr class="food-cart--right--hr" />
+                    <div class="food-cart--subtotal">
+                        <h3 class="food-cart--subtotal--title">Subtotal :</h3>
+                        <h3 class="food-cart--subtotal--price">£10.33</h3>
+                    </div>
+                    <div class="order--shipping">
+                        <h3 class="order--shipping--title">Shipping :</h3>
+                        <div class="order--shipping--section">
+                            <label for="local">
+                                <input type="checkbox" class="order--shiping--checkbox" id="local" checked>
+                                Local Pickup
+                            </label>
+                            <h4 class="order--shipping--price">£4</h4>
+                        </div>
+                        <div class="order--shipping--section">
+                            <label for="local">
+                                <input type="checkbox" class="order--shiping--checkbox" id="local">
+                                Flat Rate
+                            </label>
+                            <h4 class="order--shipping--price">£4</h4>
+                        </div>
+                    </div>
+                    <div class="food-cart--right--button--area">
+                        <button class="food-cart--right--button">Proceed To Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------Sample Banner------------------>
+    <div class="banner">
+        <div class="banner--container">
+            <div class="banner--image">
+                <img width="100%" src="img/banner_img.png" alt="">
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer--container">
+            <div class="footer--sections">
+                <h2><span class="project--color">HASH</span> FOOD</h2>
+                <P>HASH FOOD is the pioneer of healthy food with high nutrition.</P>
+                <p class="footer--copyright">©Copyright HashFood</p>
+            </div>
+            <div class="footer--sections">
+                <ul class="footer--menu">
+                    <li class="project--color">
+                        <h4 class="footer--sections--header">Feature</h4>
+                    </li>
+                    <li class="footer--menu--items"><a class="footer--menu--links" href="#">Menu</a></li>
+                    <li class="footer--menu--items"><a class="footer--menu--links" href="#">Promo</a></li>
+                    <li class="footer--menu--items"><a class="footer--menu--links" href="#">Contact</a></li>
+                    <li class="footer--menu--items"><a class="footer--menu--links" href="#">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer--sections">
+                <h4 class="footer--sections--header project--color">Get in Touch</h4>
+                <section class="footer--contact">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>2234 Surma Gate, Zindabazar, Sylhet</p>
+                </section>
+                <section class="footer--contact">
+                    <i class="far fa-envelope"></i>
+                    <p>demomail@hello.com</p>
+                </section>
+                <section class="footer--contact">
+                    <i class="fas fa-phone-alt"></i>
+                    <p>+1 234-567-890</p>
+                </section>
+            </div>
+            <div class="footer--sections">
+                <div class="footer--icons footer--sections--header project--color">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
+                <p class="footer--follow">Follow our social media.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./menu_item.js"></script>
+</body>
+
+</html>

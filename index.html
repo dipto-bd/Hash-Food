@@ -34,9 +34,129 @@
                         <a href="about.html" class="navbar--links" id="services-page">About Us</a>
                     </li>
                 </ul>
+                <div class="navbar--icons">
+                    <div href="" class="navbar--icon search-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div href="" class="navbar--icon">
+                        <i class="far fa-user"></i>
+                    </div>
+                    <div href="" class="navbar--icon">
+                        <i class="far fa-heart"></i>
+                        <span class="navbar--icon--enum">0</span>
+                    </div>
+                    <div href="" class="navbar--icon cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="navbar--icon--enum">8</span>
+                    </div>
+                </div>
                 <a href="#signup" class="navbar--btn project--bg" id="signup">Signup</a>
             </div>
         </nav>
+
+        <!---------------------Search----------------------->
+
+        <div class="search">
+            <div class="search--input">
+                <input type="text" placeholder="Search your desired food...">
+                <button class="search--button">Search</button>
+            </div>
+            <div class="search--body">
+                <div class="search--body--wrapper">
+                    <div class="search--item">
+                        <img src="./img/menu_burger.png" alt="" class="search--image">
+                        <div class="search--info">
+                            <h4 class="search--item--name">Cheese Burger</h4>
+                            <p class="search--catagory--name">Burger</p>
+                        </div>
+                    </div>
+                    <div class="search--item">
+                        <img src="./img/menu_burger.png" alt="" class="search--image">
+                        <div class="search--info">
+                            <h4 class="search--item--name">Cheese Burger</h4>
+                            <p class="search--catagory--name">Burger</p>
+                        </div>
+                    </div>
+                    <div class="search--item">
+                        <img src="./img/menu_burger.png" alt="" class="search--image">
+                        <div class="search--info">
+                            <h4 class="search--item--name">Cheese Burger</h4>
+                            <p class="search--catagory--name">Burger</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--------------------------Cart---------------------------->
+        <div class="cart">
+            <div class="cart--top">
+                <span class="cart--top--left">Cart</span>
+                <span class="cart--top--right"><i class="fas fa-times"></i></span>
+            </div>
+            <div class="cart--middle">
+                <div class="cart--middle--items">
+                    <div class="cart--middle--item">
+                        <div class="cart--item">
+                            <span class="cart--item--quantity">1</span>
+                            <div class="cart--item--info">
+                                <h4 class="cart--item--name">California Roll</h4>
+                                <span class="cart--item--type">crab & cucumber</span>
+                                <span class="cart--item--toppings">Sweet Cheese, Tuna</span>
+                            </div>
+                        </div>
+                        <div class="cart--item--counter">
+                            <button class="cart--item--counter--button">-</button>
+                            <span class="cart--item--counter--number">1</span>
+                            <button class="cart--item--counter--button project--bg">+</button>
+                        </div>
+                        <h4 class="cart--item--price">£4.99</h4>
+                    </div>
+                    <div class="cart--middle--item">
+                        <div class="cart--item">
+                            <span class="cart--item--quantity">1</span>
+                            <div class="cart--item--info">
+                                <h4 class="cart--item--name">California Roll</h4>
+                                <span class="cart--item--type">crab & cucumber</span>
+                                <span class="cart--item--toppings">Sweet Cheese, Tuna</span>
+                            </div>
+                        </div>
+                        <div class="cart--item--counter">
+                            <button class="cart--item--counter--button">-</button>
+                            <span class="cart--item--counter--number">1</span>
+                            <button class="cart--item--counter--button project--bg">+</button>
+                        </div>
+                        <h4 class="cart--item--price">£4.99</h4>
+                    </div>
+                    <div class="cart--middle--item">
+                        <div class="cart--item">
+                            <span class="cart--item--quantity">1</span>
+                            <div class="cart--item--info">
+                                <h4 class="cart--item--name">California Roll</h4>
+                                <span class="cart--item--type">crab & cucumber</span>
+                                <span class="cart--item--toppings">Sweet Cheese, Tuna</span>
+                            </div>
+                        </div>
+                        <div class="cart--item--counter">
+                            <button class="cart--item--counter--button">-</button>
+                            <span class="cart--item--counter--number">1</span>
+                            <button class="cart--item--counter--button project--bg">+</button>
+                        </div>
+                        <h4 class="cart--item--price">£4.99</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="cart--bottom">
+                <div class="cart--bottom--total">
+                    <h3 class="cart--bottom--subtotal">Subtotal</h3>
+                    <h3 class="cart--bottom--price">£33.39</h3>
+                </div>
+                <div class="cart--bottom--buttons">
+                    <button class="cart--bottom--button">View Cart</button>
+                    <button class="cart--bottom--button">Checkout</button>
+                </div>
+            </div>
+        </div>
 
         <!---------------------------Hero1--------------------------------->
         <div class="hero1">
@@ -531,7 +651,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="./index.js"></script>
 </body>
 
 </html>
